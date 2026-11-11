@@ -166,13 +166,13 @@ a { color: inherit; }
 
 .hero {
   position: relative;
-  min-height: 610px;
+  min-height: 540px;
   display: grid;
   grid-template-columns: .94fr 1.06fr;
   align-items: center;
   gap: 5.5%;
-  padding-top: 66px;
-  padding-bottom: 95px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .hero-copy { position: relative; z-index: 1; padding-bottom: 12px; }
@@ -333,28 +333,13 @@ h1 > span, h2 > span {
   letter-spacing: .15em;
 }
 
-.scroll-cue {
-  position: absolute;
-  bottom: 31px;
-  left: 0;
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  color: #728078;
-  font-size: 8px;
-  font-weight: 600;
-  letter-spacing: .16em;
-  text-decoration: none;
-}
-
-.scroll-cue span { color: var(--green); font-size: 16px; }
-
-.section-pad { padding: 105px 0; }
+.section-pad { padding: 52px 0; }
 
 .intro {
   background: #eeefe6;
   border-top: 1px solid #e8e9df;
   border-bottom: 1px solid #e8e9df;
+  padding-bottom: 32px;
 }
 
 .intro-grid, .contact-grid {
@@ -403,18 +388,19 @@ h2 {
 .values-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 73px;
+  margin-top: 40px;
   border-top: 1px solid #d9dccf;
 }
 
 .value-item {
   display: grid;
-  grid-template-columns: 37px 1fr;
+  grid-template-columns: 58px 1fr;
   padding: 22px 18px 0 0;
 }
 
 .value-item + .value-item { padding-left: 25px; border-left: 1px solid #d9dccf; }
-.value-item > span { grid-row: span 2; color: #85917f; font-size: 9px; }
+.value-item > img { grid-column: 1; grid-row: 1 / span 3; width: 48px; height: 48px; object-fit: cover; }
+.value-item > span { grid-column: 2; color: #85917f; font-size: 9px; }
 .value-item strong { font-family: var(--display); font-size: 12px; font-weight: 600; }
 .value-item small { margin-top: 6px; color: #788279; font-size: 10px; }
 
@@ -423,7 +409,7 @@ h2 {
   align-items: end;
   justify-content: space-between;
   gap: 40px;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }
 
 .section-aside {
@@ -438,6 +424,8 @@ h2 {
   background: #eeefe6;
   border-top: 1px solid #e8e9df;
   border-bottom: 1px solid #e8e9df;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .focus-grid {
@@ -530,7 +518,7 @@ h2 {
   text-decoration: none;
 }
 
-.membership { padding-top: 90px; padding-bottom: 90px; }
+.membership { padding-top: 45px; padding-bottom: 45px; }
 
 .membership-panel {
   position: relative;
@@ -587,7 +575,7 @@ h2 {
 
 .stamp-star { margin: 3px 0; color: var(--lime); font-size: 17px; }
 
-.contact { padding-top: 5px; padding-bottom: 100px; }
+.contact { padding-top: 5px; padding-bottom: 40px; }
 .contact-copy { padding-top: 20px; }
 .contact-copy > p:not(.lead) { max-width: 410px; margin-bottom: 23px; }
 .contact-details { display: grid; gap: 8px; margin: 0 0 23px; }
@@ -627,7 +615,7 @@ h2 {
 :focus-visible { outline: 3px solid #819e5c; outline-offset: 4px; }
 
 @media (min-width: 1440px) {
-  .hero { min-height: 660px; }
+  .hero { min-height: 590px; }
   .hero-visual { height: 490px; }
 }
 
@@ -638,10 +626,10 @@ h2 {
   .nav-links { gap: 13px; }
   .nav-links a { font-size: 11px; }
   .nav-cta { padding: 10px 11px; gap: 8px; font-size: 10px; }
-  .hero { min-height: 535px; gap: 4%; }
+  .hero { min-height: 490px; gap: 4%; }
   .hero-visual { height: 380px; }
   .hero-note { margin-top: 37px; }
-  .section-pad { padding: 84px 0; }
+  .section-pad { padding: 48px 0; }
   .membership-stamp { right: 6%; width: 103px; height: 103px; }
 }
 
@@ -664,21 +652,21 @@ h2 {
   .region-dropdown summary { display: block; padding: 5px 0; font-size: 10px; white-space: nowrap; }
   .region-dropdown summary::after { margin-left: 2px; }
   .regions-menu { top: 100%; left: -8px; }
-  .hero { grid-template-columns: 1fr; gap: 28px; min-height: 0; padding-top: 68px; padding-bottom: 83px; }
+  .hero { grid-template-columns: 1fr; gap: 24px; min-height: 0; padding-top: 42px; padding-bottom: 42px; }
   .hero-copy { padding-bottom: 0; }
   h1 { font-size: clamp(49px, 11vw, 72px); }
   .hero-description { max-width: 500px; }
   .hero-note { margin-top: 28px; }
   .hero-visual { height: min(58vw, 390px); min-height: 260px; margin-right: 14px; }
   .visual-card { right: -14px; bottom: 26px; }
-  .scroll-cue { bottom: 25px; }
-  .section-pad { padding: 73px 0; }
+  .section-pad { padding: 40px 0; }
   .intro-grid, .contact-grid { grid-template-columns: 1fr; gap: 25px; }
   .intro-copy, .contact-copy { padding-top: 0; }
   .about-image { height: min(52vw, 260px); }
-  .values-strip { margin-top: 46px; }
-  .value-item { grid-template-columns: 27px 1fr; padding-right: 9px; }
+  .values-strip { margin-top: 32px; }
+  .value-item { grid-template-columns: 54px 1fr; padding-right: 9px; }
   .value-item + .value-item { padding-left: 12px; }
+  .value-item > img { width: 44px; height: 44px; }
   .value-item strong { font-size: 10px; }
   .value-item small { font-size: 9px; line-height: 1.5; }
   .section-heading { align-items: start; flex-direction: column; gap: 17px; margin-bottom: 29px; }
@@ -693,18 +681,18 @@ h2 {
   .service-image { height: 180px; }
   .service-icon { margin-top: 17px; }
   .service-card p { min-height: 0; }
-  .membership { padding: 65px 0; }
+  .membership { padding: 40px 0; }
   .membership-panel { min-height: 360px; padding: 43px 30px; }
   .membership-stamp { right: 6%; bottom: 22px; width: 78px; height: 78px; font-size: 6px; }
   .membership-decoration { top: 45px; right: -5%; font-size: 200px; }
-  .contact { padding-top: 5px; padding-bottom: 73px; }
+  .contact { padding-top: 5px; padding-bottom: 36px; }
 }
 
 @media (max-width: 430px) {
   .container { width: calc(100% - 32px); }
   .brand-logo { width: 170px; }
   .nav-cta { font-size: 9px; }
-  .hero { padding-top: 53px; }
+  .hero { padding-top: 36px; padding-bottom: 36px; }
   .eyebrow { font-size: 8px; letter-spacing: .12em; }
   h1 { font-size: 48px; }
   h2 { font-size: 40px; }
@@ -724,8 +712,7 @@ h2 {
   }
   .focus-card:first-child { border-top: 0; }
   .focus-card h3 { margin: 12px 0 6px; }
-  .value-item, .value-item + .value-item { min-height: 67px; padding: 15px 0 0; border-left: 0; border-top: 1px solid #d9dccf; }
-  .value-item > span { grid-row: span 2; }
+  .value-item, .value-item + .value-item { min-height: 76px; padding: 15px 0; border-left: 0; border-top: 1px solid #d9dccf; }
   .membership-panel { min-height: 390px; padding: 34px 22px; }
   .membership-stamp { right: 6%; bottom: 15px; }
   .footer-main { grid-template-columns: 1fr auto; row-gap: 16px; }
